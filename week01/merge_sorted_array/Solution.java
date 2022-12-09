@@ -20,18 +20,9 @@ class Solution {
             }
         }
 
-        for(int i : nums1) {
-            System.out.println("---i---- : " + i);
-        }
-
     }
         
     public static void main(String[] args){
-
-        // int[] nums1 = {1,2,3,0,0,0};
-        // int m = 3;
-        // int[] nums2 = {2,5,6};
-        // int n = 3;
 
         int[] nums1 = {1};
         int m = 1;
