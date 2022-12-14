@@ -42,11 +42,7 @@ class Solution {
             end = getReplaced(sources[0], indices[i], indices[1] - 1, targets[0]);
         }
         end = getReplaced(sources[0], indices[0], indices[1] - 1, targets[0]);
-        System.out.println("end-----------" + end);
-
         end = getReplaced("", end, indices[1] - 1, "");
-        System.out.println("end---again--------" + end);
-
         end = getReplaced(sources[1], indices[1], main_word.length() - 1, targets[1]);
 
         if(end != main_word.length()) getReplaced("", end, main_word.length() - 1, "");
@@ -55,15 +51,6 @@ class Solution {
     }
 
     public static void main(String args[]) {
-        s =
-        "vmokgggqzp"
-        indices =
-        [3,5,1]
-        sources =
-        ["kg","ggq","mo"]
-        targets =
-        ["s","so","bfr"]
-
         String s = "abcd";
         int[] indices = {0, 2};
         String[] sources = {"ab", "ce"};
