@@ -3,17 +3,14 @@ import java.io.*;
 import java.math.*;
 
 // TC: O(m*n) traverse whole grid
-// MC: O(N)
+// MC: O(m*n)
 class Solution {
 
     public static void dfs(char[][] grid, int r, int c, int rows, int columns){
         if(r >= rows || c >= columns || r<0 || c<0 || grid[r][c] == '0') return;
 
         grid[r][c] = '0';
-        System.out.println("----r----: " + r);
-        System.out.println("----rows----: " + rows);
-        System.out.println("----c----: " + c);
-        System.out.println("----columns----: " + columns);
+        
         dfs(grid, r + 1, c, rows, columns);
         dfs(grid, r - 1, c, rows, columns);
         dfs(grid, r, c + 1, rows, columns);
